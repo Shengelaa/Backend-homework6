@@ -4,7 +4,7 @@
 const fs = require("fs/promises");
 const path = require("path");
 const moment = require("moment");
-const { ChildProcess } = require("child_process");
+
 async function main() {
   const dirs = await fs.readdir(__dirname);
   console.log(dirs);
