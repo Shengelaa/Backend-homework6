@@ -22,7 +22,7 @@ async function main() {
   }
 }
 
-//Easy pirveli, imena cookie batono davit chavylape.
+//Easy 
 
 //! main();
 
@@ -74,6 +74,10 @@ async function main1(fullPath) {
 //რაც შექმნილი არ მქონდა მე
 //რო ვკითხე ან გითჰაბის ან ნოუდ მოდულების გამოო
 
+
+///////
+////////
+
 //4) create a product.json files where should be some products with
 //  folowing properties: name, description, price, color, id. When you run next command "
 // node main.js ASC" it should return all sorted
@@ -123,5 +127,4 @@ async function main2version2() {
 
 main2version2(); 
 
-//უმაგრესი დავალება იყო ბოლო მაგრად მომეწონა
-//თან სორტიც გავიხსენე იმენა W homework
+
