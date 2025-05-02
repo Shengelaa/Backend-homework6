@@ -121,7 +121,7 @@ async function main2version2() {
   }
 }
 
-main2version2(); // Meore versia bevrad sworia pirvels mainc gadaxede <3
+main2version2(); 
 
 //უმაგრესი დავალება იყო ბოლო მაგრად მომეწონა
 //თან სორტიც გავიხსენე იმენა W homework
