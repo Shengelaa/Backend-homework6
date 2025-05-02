@@ -91,7 +91,7 @@ async function main2() {
       price = el.price;
       array.push(el.price);
       const res = array.sort((a, b) => a - b);
-      console.log(res, "Ascending");
+      const result = console.log(res, "Ascending");
     } else if (command === "DESC") {
       price = el.price;
       array.push(el.price);
@@ -101,7 +101,27 @@ async function main2() {
   });
 }
 
-main2();
+// main2();
+
+async function main2version2() {
+  const [, , command] = process.argv;
+  const data = await fs.readFile("product.json", "utf-8");
+  const object = JSON.parse(data);
+  let array = [];
+  object.map((el) => {
+    array.push(el.price);
+  });
+
+  if (command === "ASC") {
+    const res = array.sort((a, b) => a - b);
+    console.log(res, "Ascending");
+  } else if (command === "DESC") {
+    const res = array.sort((a, b) => b - a);
+    console.log(res, "Descending");
+  }
+}
+
+main2version2(); // Meore versia bevrad sworia pirvels mainc gadaxede <3
 
 //უმაგრესი დავალება იყო ბოლო მაგრად მომეწონა
 //თან სორტიც გავიხსენე იმენა W homework
